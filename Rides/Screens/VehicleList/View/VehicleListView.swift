@@ -35,13 +35,28 @@ struct VehicleListView: View {
                     .keyboardType(.numberPad)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                    .onChange(of: count) { newValue in
+                        withAnimation {
+                            viewModel.validateInput(newValue)
+                        }
+                    }
                     .focused($isInputFocused)
+                
+                if !viewModel.isValidInput {
+                    Text("Please enter a number between 1 and 100.")
+                        .foregroundColor(.red)
+                        .font(.caption)
+                        .padding(.horizontal)
+                        .transition(.opacity)
+                }
             }
             
             Button {
                 Task {
-                    if let countInt = Int(count) {
+                    if let countInt = Int(count), countInt > 0 && countInt <= 100 {
                         await viewModel.fetchVehicles(count: countInt)
+                    } else {
+                        viewModel.vehicles = []
                     }
                 }
             } label: {
@@ -51,9 +66,10 @@ struct VehicleListView: View {
                     .frame(maxWidth: .infinity)
             }
             .foregroundColor(.white)
-            .background(Color.blue)
+            .background(!viewModel.isValidInput ? Color.gray : Color.blue)
             .cornerRadius(10)
             .padding(.horizontal)
+            .disabled(!viewModel.isValidInput)
         }
     }
     
@@ -66,7 +82,7 @@ struct VehicleListView: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding()
-            .onChange(of: viewModel.sortByVin) { _, _ in
+            .onChange(of: viewModel.sortByVin) { _ in
                 viewModel.toggleSortOption()
             }
         }

@@ -13,4 +13,14 @@ class VehicleDetailViewModel: ObservableObject {
     init(vehicle: Vehicle) {
         self.vehicle = vehicle
     }
+    
+    func calculateCarbonEmissions(for kilometrage: Int) -> Double {
+        let first5000KmEmission = min(kilometrage, 5000)
+        let remainingKm = max(0, kilometrage - 5000)
+        
+        let emissionsFromFirst5000 = Double(first5000KmEmission) * 1.0
+        let emissionsFromRemaining = Double(remainingKm) * 1.5
+        
+        return emissionsFromFirst5000 + emissionsFromRemaining
+    }
 }
