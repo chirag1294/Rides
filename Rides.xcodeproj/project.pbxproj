@@ -11,7 +11,6 @@
 		4E9D62392C9F1E6500742AFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62382C9F1E6500742AFB /* ContentView.swift */; };
 		4E9D623B2C9F1E6700742AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9D623A2C9F1E6700742AFB /* Assets.xcassets */; };
 		4E9D623E2C9F1E6700742AFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9D623D2C9F1E6700742AFB /* Preview Assets.xcassets */; };
-		4E9D62482C9F1E6700742AFB /* RidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62472C9F1E6700742AFB /* RidesTests.swift */; };
 		4E9D62522C9F1E6700742AFB /* RidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62512C9F1E6700742AFB /* RidesUITests.swift */; };
 		4E9D62542C9F1E6700742AFB /* RidesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62532C9F1E6700742AFB /* RidesUITestsLaunchTests.swift */; };
 		4E9D62752C9F1F0000742AFB /* VehicleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62742C9F1F0000742AFB /* VehicleListView.swift */; };
@@ -20,6 +19,9 @@
 		4E9D627B2C9F1F7D00742AFB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D627A2C9F1F7D00742AFB /* APIService.swift */; };
 		4E9D62812C9F206400742AFB /* VehicleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62802C9F206400742AFB /* VehicleDetailView.swift */; };
 		4E9D62832C9F209300742AFB /* VehicleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62822C9F209300742AFB /* VehicleDetailViewModel.swift */; };
+		4E9D62892C9F248300742AFB /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D62882C9F248300742AFB /* MockAPIService.swift */; };
+		4E9D628D2C9F24D500742AFB /* VehicleListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D628C2C9F24D500742AFB /* VehicleListViewModelTests.swift */; };
+		4E9D628F2C9F24FF00742AFB /* VehicleDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9D628E2C9F24FF00742AFB /* VehicleDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,6 @@
 		4E9D623A2C9F1E6700742AFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9D623D2C9F1E6700742AFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E9D62432C9F1E6700742AFB /* RidesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E9D62472C9F1E6700742AFB /* RidesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesTests.swift; sourceTree = "<group>"; };
 		4E9D624D2C9F1E6700742AFB /* RidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9D62512C9F1E6700742AFB /* RidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesUITests.swift; sourceTree = "<group>"; };
 		4E9D62532C9F1E6700742AFB /* RidesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		4E9D627A2C9F1F7D00742AFB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4E9D62802C9F206400742AFB /* VehicleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailView.swift; sourceTree = "<group>"; };
 		4E9D62822C9F209300742AFB /* VehicleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewModel.swift; sourceTree = "<group>"; };
+		4E9D62882C9F248300742AFB /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		4E9D628C2C9F24D500742AFB /* VehicleListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModelTests.swift; sourceTree = "<group>"; };
+		4E9D628E2C9F24FF00742AFB /* VehicleDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +131,9 @@
 		4E9D62462C9F1E6700742AFB /* RidesTests */ = {
 			isa = PBXGroup;
 			children = (
-				4E9D62472C9F1E6700742AFB /* RidesTests.swift */,
+				4E9D62842C9F240D00742AFB /* MockAPIService */,
+				4E9D62852C9F242D00742AFB /* VehicleListTests */,
+				4E9D62862C9F243800742AFB /* VehicleDetailTests */,
 			);
 			path = RidesTests;
 			sourceTree = "<group>";
@@ -225,6 +231,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4E9D62842C9F240D00742AFB /* MockAPIService */ = {
+			isa = PBXGroup;
+			children = (
+				4E9D62882C9F248300742AFB /* MockAPIService.swift */,
+			);
+			path = MockAPIService;
+			sourceTree = "<group>";
+		};
+		4E9D62852C9F242D00742AFB /* VehicleListTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E9D628C2C9F24D500742AFB /* VehicleListViewModelTests.swift */,
+			);
+			path = VehicleListTests;
+			sourceTree = "<group>";
+		};
+		4E9D62862C9F243800742AFB /* VehicleDetailTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E9D628E2C9F24FF00742AFB /* VehicleDetailViewModelTests.swift */,
+			);
+			path = VehicleDetailTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -296,6 +326,7 @@
 					};
 					4E9D62422C9F1E6700742AFB = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 4E9D62322C9F1E6500742AFB;
 					};
 					4E9D624C2C9F1E6700742AFB = {
@@ -370,7 +401,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9D62482C9F1E6700742AFB /* RidesTests.swift in Sources */,
+				4E9D62892C9F248300742AFB /* MockAPIService.swift in Sources */,
+				4E9D628D2C9F24D500742AFB /* VehicleListViewModelTests.swift in Sources */,
+				4E9D628F2C9F24FF00742AFB /* VehicleDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +567,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,6 +597,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +616,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45T89QN6YM;
@@ -590,6 +626,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cizarTech.com.RidesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "RidesTests/MockAPIService/RidesTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rides.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rides";
@@ -601,6 +639,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 45T89QN6YM;
@@ -610,6 +649,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cizarTech.com.RidesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "RidesTests/MockAPIService/RidesTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rides.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Rides";
